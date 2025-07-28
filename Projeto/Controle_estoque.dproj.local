@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/11/13 20:55:32.000.888,=C:\Users\Kel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 01:46:37.000.696,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 01:48:22.000.693,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 02:35:26.000.335,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 14:19:15.000.777,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 14:35:54.000.066,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 14:39:00.000.258,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 14:40:01.000.838,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 14:40:55.000.080,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/22 15:57:18.000.380,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/01/08 00:09:43.000.100,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/23 09:57:43.000.726,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/23 10:09:44.000.766,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/23 10:20:42.000.725,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/10 21:10:56.000.302,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/10 21:17:39.000.485,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/10 21:18:12.000.967,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/17 22:18:09.000.448,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/07/27 08:50:42.000.586,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/07/27 08:55:18.000.033,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\ESTOQUE\Forms\U_principal.dfm</Transaction>
+    <Transaction>2025/07/27 08:55:18.000.033,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\ESTOQUE\Forms\U_principal.pas</Transaction>
+    <Transaction>2025/07/27 08:56:01.000.021,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\ESTOQUE\Projeto\Controle_estoque.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
