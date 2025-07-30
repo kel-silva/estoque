@@ -1,0 +1,203 @@
+inherited Frm_usuario: TFrm_usuario
+  Caption = 'CADASTRO DE USUARIOS'
+  TextHeight = 15
+  object Label1: TLabel [0]
+    Left = 238
+    Top = 154
+    Width = 83
+    Height = 20
+    Caption = 'ID_USUARIO'
+    FocusControl = DBEdit1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel [1]
+    Left = 238
+    Top = 214
+    Width = 43
+    Height = 20
+    Caption = 'NOME'
+    FocusControl = db_nome
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel [2]
+    Left = 238
+    Top = 272
+    Width = 48
+    Height = 20
+    Caption = 'SENHA'
+    FocusControl = db_senha
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel [3]
+    Left = 444
+    Top = 272
+    Width = 31
+    Height = 20
+    Caption = 'TIPO'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel [4]
+    Left = 674
+    Top = 272
+    Width = 76
+    Height = 20
+    Caption = 'CADASTRO'
+    FocusControl = db_cadastro
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  inherited Panel2: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+  object DBEdit1: TDBEdit [7]
+    Left = 238
+    Top = 180
+    Width = 154
+    Height = 28
+    DataField = 'ID_USUARIO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object db_nome: TDBEdit [8]
+    Left = 238
+    Top = 240
+    Width = 590
+    Height = 28
+    CharCase = ecUpperCase
+    DataField = 'NOME'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object db_senha: TDBEdit [9]
+    Left = 238
+    Top = 298
+    Width = 200
+    Height = 28
+    DataField = 'SENHA'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    PasswordChar = '*'
+    TabOrder = 4
+  end
+  object db_cadastro: TDBEdit [10]
+    Left = 674
+    Top = 298
+    Width = 154
+    Height = 28
+    DataField = 'CADASTRO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+  end
+  object DB_TIPO: TDBComboBox [11]
+    Left = 444
+    Top = 298
+    Width = 224
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Items.Strings = (
+      'ADMINISTRADOR'
+      'APOIO')
+    ParentFont = False
+    TabOrder = 6
+  end
+  inherited Q_padrao: TFDQuery
+    UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
+    UpdateOptions.FetchGeneratorsPoint = gpImmediate
+    UpdateOptions.GeneratorName = 'GEN_ID_USUARIO'
+    UpdateOptions.AutoIncFields = 'ID_USUARIO'
+    SQL.Strings = (
+      'select  '
+      'id_usuario,'
+      'nome,'
+      'senha,'
+      'tipo,'
+      'cadastro from usuario'
+      'order by id_usuario')
+    Left = 614
+    object Q_padraoID_USUARIO: TIntegerField
+      FieldName = 'ID_USUARIO'
+      Origin = 'ID_USUARIO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object Q_padraoNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Required = True
+      Size = 100
+    end
+    object Q_padraoSENHA: TStringField
+      FieldName = 'SENHA'
+      Origin = 'SENHA'
+      Required = True
+      Size = 30
+    end
+    object Q_padraoTIPO: TStringField
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+      Required = True
+      Size = 30
+    end
+    object Q_padraoCADASTRO: TDateField
+      FieldName = 'CADASTRO'
+      Origin = 'CADASTRO'
+      Required = True
+    end
+  end
+  inherited Ds_padrao: TDataSource
+    Left = 894
+  end
+end

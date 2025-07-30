@@ -1,0 +1,9 @@
+inherited Frm_usuario: TFrm_usuario
+  Caption = 'CADASTRO DE USUARIOS'
+  TextHeight = 15
+  inherited Panel2: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+end

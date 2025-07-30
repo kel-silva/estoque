@@ -24,6 +24,7 @@ type
     Q_padrao: TFDQuery;
     Ds_padrao: TDataSource;
     DBNavigator1: TDBNavigator;
+    bt_sair: TBitBtn;
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure bt_novoClick(Sender: TObject);
     procedure bt_deletarClick(Sender: TObject);
@@ -34,6 +35,7 @@ type
 
     //procedimento tratabotoes
     procedure Tratabotoes();
+    procedure bt_sairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -89,7 +91,7 @@ procedure TFrm_padrao.bt_editarClick(Sender: TObject);
 
 // abre para a edicao
 begin
-Tratabotoes
+Tratabotoes;
 if MessageDlg('Deseja Editar Este Registro ',mtConfirmation,[mbok,mbNo], 0) =  mrOK then
     BEGIN
       Q_padrao.edit;
@@ -115,8 +117,14 @@ procedure TFrm_padrao.bt_novoClick(Sender: TObject);
 begin
 
 // cira novo resgistro
+q_padrao.Open();
 Tratabotoes;
 Q_padrao.Append;
+end;
+
+procedure TFrm_padrao.bt_sairClick(Sender: TObject);
+begin
+close;
 end;
 
 procedure TFrm_padrao.FormKeyPress(Sender: TObject; var Key: Char);
@@ -137,7 +145,7 @@ bt_novo.Enabled:= not bt_novo.Enabled;
 bt_deletar.Enabled:= not bt_deletar.Enabled;
 bt_editar.Enabled:= not bt_editar.Enabled;
 bt_gravar.Enabled:= not bt_gravar.Enabled;
-bt_Atualzar.Enabled:= not bt_Atualzar;
+bt_Atualzar.Enabled:= not bt_Atualzar.Enabled;
 
 end;
 

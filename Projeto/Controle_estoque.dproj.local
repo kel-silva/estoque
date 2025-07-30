@@ -20,8 +20,14 @@
     <Transaction>2025/06/10 21:18:12.000.967,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2025/06/17 22:18:09.000.448,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2025/07/27 08:50:42.000.586,=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/07/27 08:55:18.000.033,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\ESTOQUE\Forms\U_principal.dfm</Transaction>
-    <Transaction>2025/07/27 08:55:18.000.033,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\ESTOQUE\Forms\U_principal.pas</Transaction>
-    <Transaction>2025/07/27 08:56:01.000.021,C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\ESTOQUE\Projeto\Controle_estoque.dproj</Transaction>
+    <Transaction>2025/07/27 08:55:18.000.033,C:\ESTOQUE\Forms\U_principal.pas=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/07/27 08:55:18.000.033,C:\ESTOQUE\Forms\U_principal.dfm=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/07/27 08:56:01.000.021,C:\ESTOQUE\Projeto\Controle_estoque.dproj=C:\Users\Kel\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/07/28 10:49:08.809,=C:\ESTOQUE\Projeto\Unit1.pas</Transaction>
+    <Transaction>2025/07/28 10:49:27.955,C:\ESTOQUE\Forms\U_DM.pas=C:\ESTOQUE\Projeto\Unit1.pas</Transaction>
+    <Transaction>2025/07/28 10:49:27.955,C:\ESTOQUE\Forms\U_DM.dfm=C:\ESTOQUE\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2025/07/28 11:14:26.066,=C:\ESTOQUE\Projeto\Unit1.pas</Transaction>
+    <Transaction>2025/07/28 11:15:59.137,C:\ESTOQUE\Forms\U_padrao.dfm=C:\ESTOQUE\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2025/07/28 11:15:59.137,C:\ESTOQUE\Forms\U_padrao.pas=C:\ESTOQUE\Projeto\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>
