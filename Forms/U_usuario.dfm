@@ -70,7 +70,11 @@ inherited Frm_usuario: TFrm_usuario
     Font.Style = []
     ParentFont = False
   end
+  inherited Panel1: TPanel
+    TabOrder = 5
+  end
   inherited Panel2: TPanel
+    TabOrder = 6
     inherited DBNavigator1: TDBNavigator
       Hints.Strings = ()
     end
@@ -88,7 +92,7 @@ inherited Frm_usuario: TFrm_usuario
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 0
   end
   object db_nome: TDBEdit [8]
     Left = 238
@@ -104,7 +108,7 @@ inherited Frm_usuario: TFrm_usuario
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 1
   end
   object db_senha: TDBEdit [9]
     Left = 238
@@ -120,7 +124,7 @@ inherited Frm_usuario: TFrm_usuario
     Font.Style = []
     ParentFont = False
     PasswordChar = '*'
-    TabOrder = 4
+    TabOrder = 2
   end
   object db_cadastro: TDBEdit [10]
     Left = 674
@@ -129,19 +133,22 @@ inherited Frm_usuario: TFrm_usuario
     Height = 28
     DataField = 'CADASTRO'
     DataSource = Ds_padrao
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Enabled = False
+    Font.Charset = GREEK_CHARSET
+    Font.Color = clBlue
     Font.Height = -15
     Font.Name = 'Segoe UI'
-    Font.Style = []
+    Font.Style = [fsUnderline]
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
   end
   object DB_TIPO: TDBComboBox [11]
     Left = 444
     Top = 298
     Width = 224
     Height = 28
+    DataField = 'TIPO'
+    DataSource = Ds_padrao
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -151,10 +158,9 @@ inherited Frm_usuario: TFrm_usuario
       'ADMINISTRADOR'
       'APOIO')
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 3
   end
   inherited Q_padrao: TFDQuery
-    Active = True
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
     UpdateOptions.FetchGeneratorsPoint = gpImmediate
     UpdateOptions.GeneratorName = 'GEN_ID_USUARIO'
@@ -172,7 +178,7 @@ inherited Frm_usuario: TFrm_usuario
       AutoGenerateValue = arAutoInc
       FieldName = 'ID_USUARIO'
       Origin = 'ID_USUARIO'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ProviderFlags = [pfInWhere, pfInKey]
     end
     object Q_padraoNOME: TStringField
       FieldName = 'NOME'

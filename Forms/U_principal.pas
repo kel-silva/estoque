@@ -46,6 +46,12 @@ type
     procedure SpeedButton10Click(Sender: TObject);
     procedure bt_usuarioClick(Sender: TObject);
     procedure Abre_tela_usuario();
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure Abre_Tela_empresa();
+    procedure Empresa1Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure Abre_Tela_Cliente();
+    procedure Clientes1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -59,7 +65,32 @@ implementation
 
 {$R *.dfm}
 
-uses U_usuario;
+uses U_usuario, U_empresa, U_clientes;
+
+procedure TFrm_principal.Abre_Tela_Cliente;
+
+          begin
+Frm_Cliente:= Tfrm_Cliente.create(self);
+Frm_Cliente.ShowModal;
+try
+
+finally
+  Frm_Cliente.Free;
+  Frm_Cliente:= nil;
+end;
+end;
+
+procedure TFrm_principal.Abre_Tela_empresa;
+begin
+Frm_empresa:= Tfrm_empresa.create(self);
+Frm_empresa.ShowModal;
+try
+
+finally
+  Frm_empresa.Free;
+  Frm_empresa:= nil;
+end;
+end;
 
 procedure TFrm_principal.Abre_tela_usuario;
 begin
@@ -78,6 +109,16 @@ begin
 Abre_tela_usuario;
 end;
 
+procedure TFrm_principal.Clientes1Click(Sender: TObject);
+begin
+Abre_Tela_cliente;
+end;
+
+procedure TFrm_principal.Empresa1Click(Sender: TObject);
+begin
+Abre_Tela_empresa;
+end;
+
 procedure TFrm_principal.SpeedButton10Click(Sender: TObject);
 begin
 if messageDlg('Deseja Sair do Sistema ?',mtConfirmation,[mbOK,mbno], 0)=mrok then
@@ -89,6 +130,16 @@ end
  close;
 
 
+end;
+
+procedure TFrm_principal.SpeedButton2Click(Sender: TObject);
+begin
+Abre_tela_empresa;
+end;
+
+procedure TFrm_principal.SpeedButton3Click(Sender: TObject);
+begin
+Abre_Tela_Cliente;
 end;
 
 procedure TFrm_principal.Timer1Timer(Sender: TObject);
