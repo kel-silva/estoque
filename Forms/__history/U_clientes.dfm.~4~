@@ -1,0 +1,421 @@
+inherited Frm_Cliente: TFrm_Cliente
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 763
+  ExplicitLeft = 3
+  ExplicitTop = 3
+  ExplicitHeight = 810
+  TextHeight = 15
+  object Label1: TLabel [0]
+    Left = 32
+    Top = 87
+    Width = 89
+    Height = 25
+    Caption = 'ID_CLIENTE'
+    FocusControl = DBEdit1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel [1]
+    Left = 32
+    Top = 164
+    Width = 52
+    Height = 25
+    Caption = 'NOME'
+    FocusControl = DB_NOME
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel [2]
+    Left = 32
+    Top = 229
+    Width = 89
+    Height = 25
+    Caption = 'ENDERECO'
+    FocusControl = DBEdit3
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel [3]
+    Left = 590
+    Top = 239
+    Width = 50
+    Height = 15
+    Caption = 'NUMERO'
+    FocusControl = DBEdit4
+  end
+  object Label5: TLabel [4]
+    Left = 32
+    Top = 299
+    Width = 63
+    Height = 25
+    Caption = 'BAIRRO'
+    FocusControl = DBEdit5
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel [5]
+    Left = 32
+    Top = 357
+    Width = 63
+    Height = 25
+    Caption = 'CIDADE'
+    FocusControl = DBEdit6
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel [6]
+    Left = 710
+    Top = 357
+    Width = 21
+    Height = 25
+    Caption = 'UF'
+    FocusControl = DBEdit7
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel [7]
+    Left = 32
+    Top = 427
+    Width = 30
+    Height = 25
+    Caption = 'CEP'
+    FocusControl = DBEdit8
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel [8]
+    Left = 293
+    Top = 426
+    Width = 80
+    Height = 25
+    Caption = 'TELEFONE'
+    FocusControl = DBEdit9
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel [9]
+    Left = 563
+    Top = 422
+    Width = 30
+    Height = 25
+    Caption = 'CPF'
+    FocusControl = DBEdit10
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label12: TLabel [10]
+    Left = 200
+    Top = 87
+    Width = 92
+    Height = 25
+    Caption = 'CADASTRO'
+    FocusControl = DB_CADASTRO
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  inherited Panel2: TPanel
+    Top = 696
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+  object DBEdit1: TDBEdit [13]
+    Left = 32
+    Top = 118
+    Width = 154
+    Height = 33
+    DataField = 'ID_CLIENTE'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object DB_NOME: TDBEdit [14]
+    Left = 32
+    Top = 189
+    Width = 712
+    Height = 33
+    DataField = 'NOME'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit [15]
+    Left = 32
+    Top = 260
+    Width = 505
+    Height = 33
+    DataField = 'ENDERECO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+  object DBEdit4: TDBEdit [16]
+    Left = 590
+    Top = 260
+    Width = 154
+    Height = 33
+    DataField = 'NUMERO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+  end
+  object DBEdit5: TDBEdit [17]
+    Left = 32
+    Top = 323
+    Width = 712
+    Height = 33
+    DataField = 'BAIRRO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+  end
+  object DBEdit6: TDBEdit [18]
+    Left = 32
+    Top = 388
+    Width = 593
+    Height = 33
+    DataField = 'CIDADE'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+  end
+  object DBEdit7: TDBEdit [19]
+    Left = 710
+    Top = 388
+    Width = 34
+    Height = 33
+    DataField = 'UF'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+  end
+  object DBEdit8: TDBEdit [20]
+    Left = 32
+    Top = 455
+    Width = 244
+    Height = 33
+    DataField = 'CEP'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+  end
+  object DBEdit9: TDBEdit [21]
+    Left = 293
+    Top = 453
+    Width = 244
+    Height = 33
+    DataField = 'TELEFONE'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+  end
+  object DBEdit10: TDBEdit [22]
+    Left = 563
+    Top = 453
+    Width = 181
+    Height = 33
+    DataField = 'CPF'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+  end
+  object DB_CADASTRO: TDBEdit [23]
+    Left = 200
+    Top = 118
+    Width = 544
+    Height = 33
+    DataField = 'CADASTRO'
+    DataSource = Ds_padrao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+  end
+  inherited Q_padrao: TFDQuery
+    UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
+    UpdateOptions.FetchGeneratorsPoint = gpImmediate
+    UpdateOptions.GeneratorName = 'GEN_ID_CLIENTE'
+    UpdateOptions.AutoIncFields = 'ID_CLIENTE'
+    SQL.Strings = (
+      ' SELECT'
+      '    ID_CLIENTE,'
+      '    NOME,'
+      '    ENDERECO,'
+      '    NUMERO,'
+      '    BAIRRO,'
+      '    CIDADE,'
+      '    UF,'
+      '    CEP,'
+      '    TELEFONE,'
+      '    CPF,'
+      '  '
+      '    CADASTRO'
+      'FROM CLIENTE'
+      'ORDER BY ID_CLIENTE')
+    Top = 216
+    object Q_padraoID_CLIENTE: TFDAutoIncField
+      FieldName = 'ID_CLIENTE'
+      Origin = 'ID_CLIENTE'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object Q_padraoNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Required = True
+      Size = 100
+    end
+    object Q_padraoENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      Origin = 'ENDERECO'
+      Required = True
+      Size = 100
+    end
+    object Q_padraoNUMERO: TIntegerField
+      FieldName = 'NUMERO'
+      Origin = 'NUMERO'
+      Required = True
+    end
+    object Q_padraoBAIRRO: TStringField
+      FieldName = 'BAIRRO'
+      Origin = 'BAIRRO'
+      Required = True
+      Size = 100
+    end
+    object Q_padraoCIDADE: TStringField
+      FieldName = 'CIDADE'
+      Origin = 'CIDADE'
+      Required = True
+      Size = 100
+    end
+    object Q_padraoUF: TStringField
+      FieldName = 'UF'
+      Origin = 'UF'
+      Required = True
+      FixedChar = True
+      Size = 2
+    end
+    object Q_padraoCEP: TStringField
+      FieldName = 'CEP'
+      Origin = 'CEP'
+      Required = True
+      EditMask = '00000\-999;0;_'
+      Size = 16
+    end
+    object Q_padraoTELEFONE: TStringField
+      FieldName = 'TELEFONE'
+      Origin = 'TELEFONE'
+      Required = True
+      EditMask = '!\(999\)0000-0000;1;_'
+      Size = 16
+    end
+    object Q_padraoCPF: TStringField
+      FieldName = 'CPF'
+      Origin = 'CPF'
+      Required = True
+      EditMask = '000\.000\.000-.00;0;_'
+      Size = 16
+    end
+    object Q_padraoCADASTRO: TDateField
+      FieldName = 'CADASTRO'
+      Origin = 'CADASTRO'
+      Required = True
+    end
+  end
+  inherited Ds_padrao: TDataSource
+    Left = 832
+    Top = 272
+  end
+end

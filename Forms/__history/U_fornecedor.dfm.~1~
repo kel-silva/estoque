@@ -1,0 +1,9 @@
+inherited Frm_fornecedor: TFrm_fornecedor
+  Caption = 'CADASTRO DE  FORNECEDORES'
+  TextHeight = 15
+  inherited Panel2: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+end

@@ -7,7 +7,8 @@ uses
   U_padrao in '..\Forms\U_padrao.pas' {Frm_padrao},
   U_usuario in '..\Forms\U_usuario.pas' {Frm_usuario},
   U_empresa in '..\Forms\U_empresa.pas' {Frm_padrao1},
-  U_clientes in '..\Forms\U_clientes.pas' {Frm_Cliente};
+  U_clientes in '..\Forms\U_clientes.pas' {Frm_Cliente},
+  U_fornecedor in '..\Forms\U_fornecedor.pas' {Frm_fornecedor};
 
 {$R *.res}
 
@@ -16,6 +17,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrm_principal, Frm_principal);
   Application.CreateForm(TDM, DM);
-  Application.CreateForm(TFrm_Cliente, Frm_Cliente);
   Application.Run;
 end.

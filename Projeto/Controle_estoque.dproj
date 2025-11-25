@@ -127,6 +127,10 @@
             <Form>Frm_Cliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\Forms\U_fornecedor.pas">
+            <Form>Frm_fornecedor</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -1,8 +1,6 @@
 inherited Frm_Cliente: TFrm_Cliente
   Caption = 'Cadastro de Clientes'
   ClientHeight = 763
-  ExplicitLeft = 3
-  ExplicitTop = 3
   ExplicitHeight = 810
   TextHeight = 15
   object Label1: TLabel [0]
@@ -155,6 +153,7 @@ inherited Frm_Cliente: TFrm_Cliente
   end
   inherited Panel2: TPanel
     Top = 696
+    ExplicitTop = 696
     inherited DBNavigator1: TDBNavigator
       Hints.Strings = ()
     end
@@ -350,6 +349,7 @@ inherited Frm_Cliente: TFrm_Cliente
       FieldName = 'ID_CLIENTE'
       Origin = 'ID_CLIENTE'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object Q_padraoNOME: TStringField
       FieldName = 'NOME'

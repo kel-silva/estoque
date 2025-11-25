@@ -27,8 +27,8 @@ type
     Usuario1: TMenuItem;
     Empresa1: TMenuItem;
     Clientes1: TMenuItem;
-    Fornecedorees1: TMenuItem;
-    FormaPgto1: TMenuItem;
+    menu_fornecedor: TMenuItem;
+    Menu_forma_PGTO: TMenuItem;
     Movimentoes1: TMenuItem;
     Compras1: TMenuItem;
     Vendas1: TMenuItem;
@@ -42,6 +42,7 @@ type
     ListaVendas1: TMenuItem;
     SobreoSistema1: TMenuItem;
     SobreoSistema2: TMenuItem;
+    Menu_produtos: TMenuItem;
     procedure Timer1Timer(Sender: TObject);
     procedure SpeedButton10Click(Sender: TObject);
     procedure bt_usuarioClick(Sender: TObject);
@@ -52,6 +53,9 @@ type
     procedure SpeedButton3Click(Sender: TObject);
     procedure Abre_Tela_Cliente();
     procedure Clientes1Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure Abre_tela_fornecedor();
+    procedure menu_fornecedorClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -65,7 +69,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_usuario, U_empresa, U_clientes;
+uses U_usuario, U_empresa, U_clientes, U_fornecedor;
 
 procedure TFrm_principal.Abre_Tela_Cliente;
 
@@ -92,8 +96,20 @@ finally
 end;
 end;
 
+procedure TFrm_principal.Abre_tela_fornecedor;
+begin // abre a tela de fornecedores
+  Frm_fornecedor:= Tfrm_Fornecedor.Create(self);
+  Frm_fornecedor .ShowModal;
+try
+
+finally
+   Frm_fornecedor.Free;
+   Frm_fornecedor:= nil;
+end;
+end;
+
 procedure TFrm_principal.Abre_tela_usuario;
-begin
+begin// abre tela de usuario
 frm_usuario:= Tfrm_usuario.Create(self);
 frm_usuario.ShowModal;
 try
@@ -119,6 +135,11 @@ begin
 Abre_Tela_empresa;
 end;
 
+procedure TFrm_principal.menu_fornecedorClick(Sender: TObject);
+begin
+Abre_tela_fornecedor;
+end;
+
 procedure TFrm_principal.SpeedButton10Click(Sender: TObject);
 begin
 if messageDlg('Deseja Sair do Sistema ?',mtConfirmation,[mbOK,mbno], 0)=mrok then
@@ -140,6 +161,11 @@ end;
 procedure TFrm_principal.SpeedButton3Click(Sender: TObject);
 begin
 Abre_Tela_Cliente;
+end;
+
+procedure TFrm_principal.SpeedButton4Click(Sender: TObject);
+begin
+Abre_tela_fornecedor;
 end;
 
 procedure TFrm_principal.Timer1Timer(Sender: TObject);
