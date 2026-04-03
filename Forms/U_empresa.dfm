@@ -1,8 +1,6 @@
 inherited Frm_empresa: TFrm_empresa
   Caption = 'Cadastro de Empresa'
   ClientHeight = 671
-  ExplicitLeft = 3
-  ExplicitTop = -9
   ExplicitHeight = 718
   TextHeight = 15
   object Label1: TLabel [0]
@@ -193,7 +191,7 @@ inherited Frm_empresa: TFrm_empresa
   inherited Panel2: TPanel
     Top = 604
     TabOrder = 14
-    ExplicitTop = 508
+    ExplicitTop = 604
     inherited DBNavigator1: TDBNavigator
       Hints.Strings = ()
     end

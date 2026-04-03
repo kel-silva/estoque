@@ -1,8 +1,6 @@
 inherited Frm_fornecedor: TFrm_fornecedor
   Caption = 'CADASTRO DE  FORNECEDORES'
   ClientHeight = 657
-  ExplicitLeft = 3
-  ExplicitTop = 3
   ExplicitHeight = 704
   TextHeight = 15
   object Label1: TLabel [0]
@@ -175,6 +173,7 @@ inherited Frm_fornecedor: TFrm_fornecedor
   end
   inherited Panel2: TPanel
     Top = 590
+    ExplicitTop = 590
     inherited DBNavigator1: TDBNavigator
       Hints.Strings = ()
     end
@@ -399,6 +398,7 @@ inherited Frm_fornecedor: TFrm_fornecedor
       FieldName = 'ID_FORNECEDOR'
       Origin = 'ID_FORNECEDOR'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object Q_padraoNOME: TStringField
       FieldName = 'NOME'

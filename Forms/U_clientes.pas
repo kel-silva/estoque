@@ -45,6 +45,7 @@ type
     DBEdit10: TDBEdit;
     Label12: TLabel;
     DB_CADASTRO: TDBEdit;
+    procedure bt_novoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,5 +58,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFrm_Cliente.bt_novoClick(Sender: TObject);
+begin
+  inherited;
+    DB_cadastro.Text:= dateTostr (now);
+db_nome.SetFocus;
+end;
 
 end.

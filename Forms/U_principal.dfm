@@ -2267,6 +2267,7 @@ object Frm_principal: TFrm_principal
         D1B6907A40B1709AA0353C5235FFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
       ParentFont = False
+      OnClick = SpeedButton5Click
     end
     object SpeedButton6: TSpeedButton
       Left = 600
@@ -4559,6 +4560,7 @@ object Frm_principal: TFrm_principal
       end
       object Menu_produtos: TMenuItem
         Caption = 'Produtos'
+        OnClick = Menu_produtosClick
       end
       object Menu_forma_PGTO: TMenuItem
         Caption = '&Forma Pgto'

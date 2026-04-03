@@ -1,0 +1,25 @@
+inherited Frm_Produto: TFrm_Produto
+  Caption = 'CADASTRO DE PRODUTOS'
+  TextHeight = 15
+  inherited Panel2: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+  inherited Q_padrao: TFDQuery
+    SQL.Strings = (
+      'select '
+      'A.id_produto,'
+      'A.produto_descricao,'
+      'A.VL_custo,'
+      'A.vl_venda,'
+      'A.ESTOQUE,'
+      'A.ESTOQUE_MIN,'
+      'A.UNIDADE,'
+      'A.CADASTRO,'
+      'A.ID_FORNECEDOR,'
+      'B.NOME  from produto A, fornecedor B'
+      ''
+      'WHERE A.ID_FORNECEDOR= B.ID_FORNECEDOR')
+  end
+end

@@ -56,6 +56,9 @@ type
     procedure SpeedButton4Click(Sender: TObject);
     procedure Abre_tela_fornecedor();
     procedure menu_fornecedorClick(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+    procedure   Abre_Tela_Produto();
+    procedure Menu_produtosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,7 +72,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_usuario, U_empresa, U_clientes, U_fornecedor;
+uses U_usuario, U_empresa, U_clientes, U_fornecedor, U_produtos;
 
 procedure TFrm_principal.Abre_Tela_Cliente;
 
@@ -108,6 +111,18 @@ finally
 end;
 end;
 
+procedure TFrm_principal.Abre_Tela_Produto;
+begin
+  Frm_produto:= Tfrm_produto.create (self);
+  Frm_produto.ShowModal;
+  try
+
+  finally
+    Frm_produto.Free;
+    frm_produto := nil;
+  end;
+end;
+
 procedure TFrm_principal.Abre_tela_usuario;
 begin// abre tela de usuario
 frm_usuario:= Tfrm_usuario.Create(self);
@@ -140,6 +155,12 @@ begin
 Abre_tela_fornecedor;
 end;
 
+procedure TFrm_principal.Menu_produtosClick(Sender: TObject);
+begin
+//abre a tela de produto
+   Abre_Tela_Produto;
+end;
+
 procedure TFrm_principal.SpeedButton10Click(Sender: TObject);
 begin
 if messageDlg('Deseja Sair do Sistema ?',mtConfirmation,[mbOK,mbno], 0)=mrok then
@@ -166,6 +187,12 @@ end;
 procedure TFrm_principal.SpeedButton4Click(Sender: TObject);
 begin
 Abre_tela_fornecedor;
+end;
+
+procedure TFrm_principal.SpeedButton5Click(Sender: TObject);
+begin
+// abre a tela de produtos
+  Abre_Tela_Produto;
 end;
 
 procedure TFrm_principal.Timer1Timer(Sender: TObject);
